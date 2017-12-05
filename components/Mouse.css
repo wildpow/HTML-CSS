@@ -4,17 +4,17 @@
     height: 35px;
     border: 2px solid #fff;
     border-radius: 25px;
-    opacity: 0.75;
+    opacity: 0.5;
     box-sizing: content-box;
     margin: 0;
     min-width: 0;
+    transition: opacity .4s ease-in;
 }
+.Mouse__box.hide {
+    opacity: 0;
+}
+
 .Mouse {
-    /* justify-self: start;
-    align-self: center;
-    min-width: 0;
-    grid-row-start: 11;
-    grid-column-start: 10; */
     top: 0;
     right: 0;
     bottom: 0;
@@ -24,15 +24,7 @@
     margin: auto;
 
 }
-.Mouse__box {
-    width: 3px;
-    padding: 10px 15px;
-    height: 35px;
-    border: 2px solid #fff;
-    border-radius: 25px;
-    opacity: 0.75;
-    box-sizing: content-box;
-}
+
 .scroller {
     width: 3px;
     height: 10px;
@@ -70,11 +62,4 @@
     0% { opacity: 0; }
     10% { transform: translateY(0); opacity: 1; }
     100% { transform: translateY(15px); opacity: 0;}
-}
-
-.Mouse hide {
-    display: none;
-}
-.Mouse show {
-    display: block;
 }

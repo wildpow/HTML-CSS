@@ -50,7 +50,7 @@ body.fade-out {
 }
 
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .Landing__title {
         font-size: 6rem;
         grid-row-start: 9;
@@ -67,19 +67,87 @@ body.fade-out {
         width: 30.5rem;
         height: 3.2rem;
     }
+    
 }
 
 
 
-@media (max-width: 1200px) {
-    .Landing__title {
-        font-size: 10rem;
-        
-    }
-}
+
 
 @media (max-width: 765px) {
     .Landing__title {
         font-size: 8rem;
     }
+    .About__content p{
+        font-size: 1.2rem;
+    }
+} */
+
+@media (min-width: 340px) and (max-width: 539px) {
+    .Landing__title {
+        font-size: 5rem !important;
+        grid-row-start: 10;
+        grid-column: 9 / span 12;
+    }
+    .Landing__title::first-letter {
+        font-size: 6rem;
+    }
+    .title__box {
+        
+        grid-row-start: 10;
+        grid-column-start: 10;
+        width: 18.5rem;
+        height: 2.5rem;
+    }
 }
+
+
+@media (min-width: 540px) and (max-width: 767px) {
+    .Landing__title {
+        font-size: 7rem !important;
+        grid-row-start: 10;
+        grid-column: 9 / span 12;
+    }
+    .Landing__title::first-letter {
+        font-size: 8rem;
+    }
+    .title__box {
+        
+        grid-row-start: 10;
+        grid-column-start: 10;
+        width: 25rem;
+        height: 3.2rem;
+    }
+    .About__content {
+        border-radius: 4px;
+        width: 80vw;
+        font-size: 1rem;
+        grid-row-start: 11;
+        grid-column-start: 8;
+}
+}
+
+@media (min-width: 768px)  and (max-width: 989px) {
+    .Landing__title {
+        font-size: 8rem !important;
+        grid-row-start: 10;
+        grid-column: 9 / span 12;
+    }
+    .Landing__title::first-letter {
+        font-size: 9rem;
+    }
+    .title__box {
+        
+        grid-row-start: 10;
+        grid-column-start: 10;
+        width: 28rem;
+        height: 3.2rem;
+    }
+    .About__content {
+        border-radius: 4px;
+        width: 60vw;
+        font-size: 1.1rem;
+        grid-row-start: 11;
+        grid-column-start: 9;
+}}
+

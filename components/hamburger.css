@@ -14,7 +14,7 @@
 .menu-lines {
     position: relative;
     display: inline-block;
-    width: 40px;
+    width: 47px;
     height: 37px;
     vertical-align: middle;
 }
@@ -22,7 +22,7 @@
 .menu-lines span {
     position: absolute;
     display: block;
-    height: 6px;
+    height: 8px;
     width: 100%;
     background: black;
 }
@@ -32,11 +32,11 @@
 }
 
 .menu-lines span:nth-child(2) {
-    top: 12px
+    top: 15px
 }
 
 .menu-lines span:nth-child(3) {
-    top: 24px
+    top: 30px
 }
 #menu-btn:hover {
     cursor: pointer;
@@ -51,7 +51,7 @@
 }
 .change .bar1 {
     -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
-    transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-12px, 12px) ;
 }
 
 .change .bar2 {opacity: 0;}

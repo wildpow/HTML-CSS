@@ -9,14 +9,15 @@
 }
 
 .Landing__title {
-    font-family: 'Cormorant', serif;
+    font-family: 'Cormorant Garamond', serif;
+    text-shadow:0 0 1px transparent;
     font-size: 12rem;
     grid-row-start: 10;
     grid-column: 9 / span 12;
     margin: 0;
     min-width: 0;
     font-weight: 600;
-    max-width: 25vw;
+    max-width: 20vw;
     /* letter-spacing: -2px; */
     font-variant: small-caps;
     z-index: 1;

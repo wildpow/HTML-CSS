@@ -1,0 +1,43 @@
+.Contact__grid {	
+    display: grid;
+    width: 100vw;
+    height: 90vh;
+    align-items: end;
+    justify-items: center;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+}
+
+.Contact__content {
+    /* margin: auto; */
+    /* display: none; */
+    border-radius: 4px;
+    width: 25vw;
+    /* height: 70vh; */
+    color: rgba(255, 255, 255, .6);
+    grid-row-start: 12;
+    grid-column-start: 2;
+    margin: auto;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    transition: all .6s ease-in-out;
+    transform: translate3d(-200px, 50px, 0px);
+    opacity: 0;
+    font-size: 2.2rem;
+    background: url("../images/trans_black_25.png");
+    padding: 15px;
+}
+.Contact__content.active {
+    transform: translate3d(0px, 0, 0);
+    opacity: 1;
+    /* display: inherit; */
+    
+}
+.Contact__content h3 {
+    margin: 0;
+    
+}

@@ -45,15 +45,26 @@ window.addEventListener(
     
    const mouse = document.querySelector(".Mouse__box");
     const aboutContent = document.querySelector(".About__content");
-
+    const contactContent = document.querySelector(".Contact__content");
+    const projectContent = document.querySelector(".Projects__content");
+    
     function scrolling(e) {
         if (isFullyVisible(aboutContent)) {
-            // aboutContent.style.display = 'block';
+          
             aboutContent.classList.add("active");
-            
         } else {
-            // aboutContent.style.display = 'none';
+          
             aboutContent.classList.remove("active");
+        }
+        if (isFullyVisible(contactContent)) {
+            contactContent.classList.add("active");
+        } else {
+            contactContent.classList.remove("active");
+        }
+        if (isFullyVisible(projectContent)) {
+            projectContent.classList.add("active");
+        } else {
+            projectContent.classList.remove("active");
         }
         // if (isPartiallyVisible(mouse)) {
         //     mouse.classList.add("hide");
